@@ -25,7 +25,7 @@ interface Star {
   alpha: number;
 }
 
-/** White at an alpha. rgba() rather than `rgb(… / a)` for older Safari canvases. */
+/** White at an alpha. rgba() rather than `rgb(â€¦ / a)` for older Safari canvases. */
 const white = (alpha: number) => `rgba(255, 255, 255, ${alpha})`;
 const starCache = new WeakMap<Level, Star[]>();
 

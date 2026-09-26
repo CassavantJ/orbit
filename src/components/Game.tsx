@@ -245,7 +245,7 @@ export function Game({ level, index, best, hasNext, onWin, onNext, onMenu }: Gam
     drag.current = null;
   };
 
-  // The readout gives the angle as seen on screen: a rotated view turns the world 90°.
+  // The readout gives the angle as seen on screen: a rotated view turns the world 90Â°.
   const onScreen = ((snapshot.aim.angle * 180) / Math.PI + (rotated ? 90 : 0)) % 360;
 
   const status =
