@@ -1,0 +1,70 @@
+.dialog {
+  width: min(22rem, calc(100% - 2rem));
+  padding: 1.75rem 1.5rem 1.5rem;
+  border: 0;
+  border-radius: var(--radius);
+  background: linear-gradient(170deg, var(--bg-top), var(--bg-bottom));
+  box-shadow:
+    inset 0 0 0 1px var(--border),
+    0 1.5rem 4rem rgb(0 0 0 / 0.5);
+  color: var(--text);
+  text-align: center;
+}
+
+.dialog::backdrop {
+  background: rgb(0 0 0 / 0.45);
+}
+
+.title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  text-shadow: 0 0 0.75rem var(--glow);
+}
+
+.stars {
+  margin: 0.9rem 0 0.4rem;
+  font-size: 2rem;
+}
+
+.summary {
+  margin: 0 0 1.4rem;
+  color: var(--text-muted);
+}
+
+.best {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.actions {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.primary,
+.secondary {
+  min-height: 2.75rem;
+  border-radius: 999px;
+}
+
+.primary {
+  background: #fff;
+  color: #1a1026;
+  font-weight: 500;
+}
+
+.primary:hover,
+.primary:focus-visible {
+  box-shadow: 0 0 1rem var(--glow);
+}
+
+.secondary {
+  background: rgb(255 255 255 / 0.08);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+
+.secondary:hover,
+.secondary:focus-visible {
+  background: rgb(255 255 255 / 0.16);
+}
